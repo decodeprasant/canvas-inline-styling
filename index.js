@@ -25,6 +25,8 @@ let startY = 20,
   previuosWordWidth = startX,
   previuosWordHeight = startY;
 
+  startY = startY > fontSize ? startY : fontSize;
+
 
 words.forEach((word, i) => {
   let wordWidth = ctx.measureText(word).width;
